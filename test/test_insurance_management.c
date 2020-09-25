@@ -112,7 +112,7 @@ void test_validphonenumber(void) {
   CU_ASSERT(1 == phonenumber(1234567890));
   
   
-  CU_ASSERT(1 == age(4536271809));
+  CU_ASSERT(1 == phonenumber(4536271809));
 }
 
 void test_invalidphonenumber(void) {
