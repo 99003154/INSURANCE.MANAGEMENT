@@ -94,7 +94,7 @@ else
     return 1;
 }
 
-int want_to_pay_pa(char operand1)
+int pay_pa(char operand1)
 {
 scanf("%s",operand1);
 if(operand1[0]=='0')
@@ -104,7 +104,7 @@ else if(operand1[0]=='1')
     return 1;
 }
 
-int correctpayment(float operand1)
+int pa_payment(float operand1)
 {
   scanf("%f",&operand1);
   amount=amount;
