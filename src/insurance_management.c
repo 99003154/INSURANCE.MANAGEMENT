@@ -94,7 +94,7 @@ else
     return 1;
 }
 
-int principleamount(char operand1)
+int want_to_pay_pa(char operand1)
 {
 scanf("%s",operand1);
 if(operand1[0]=='0')
