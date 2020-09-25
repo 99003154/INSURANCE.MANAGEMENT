@@ -131,9 +131,9 @@ void test_validlicensenumber(void) {
 }
 
 void test_invalidlicensenumber(void) {
-  CU_ASSERT(1 == licensenumber(karnatakamysoregok));
+  CU_ASSERT(0 == licensenumber(karnatakamysoregok));
   
-  CU_ASSERT(1 == licensenumber(karnataka myso));
+  CU_ASSERT(0 == licensenumber(karnataka myso));
  
 }
 
@@ -145,9 +145,9 @@ void test_validenginenumber(void) {
  }
  
  void test_invalidenginenumber(void) {
-  CU_ASSERT(1 == enginenumber(887788778877));
+  CU_ASSERT(0 == enginenumber(887788778877));
   
-  CU_ASSERT(1 == enginenumber(990099));
+  CU_ASSERT(0 == enginenumber(990099));
   
  }
  
@@ -169,7 +169,7 @@ void test_validenginenumber(void) {
  }
  
   void test_invalidpa_payment(void) {
-  CU_ASSERT(1 == pa_payment(0));
+  CU_ASSERT(0 == pa_payment(0));
  
   
  }
