@@ -1,6 +1,6 @@
 /** 
-* @file calculator_operations.h
-* Calculator application with 4 mathematical operations
+* @file insurance_management.h
+* Insurance management system with various operation
 *
 */
 #ifndef __INSURANCE_MANAGEMENT_H__
