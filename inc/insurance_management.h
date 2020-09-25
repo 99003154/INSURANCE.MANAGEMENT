@@ -68,19 +68,6 @@ int principleamount(int operand1);
 */
 int correctpayment(int operand1);
 
-/**
-* checks the username and pasword matches 
-* @param[in] username
-* @param[in] password
-* @return Result login is succeessful if username and password matches 
-*/
-char login(char username,char password);
 
-/**
-* checks whether the client have claimed the insurance amount in last one year
-* @param[in] operand1 
-* @return Result claims the required amount if not claimed else doesnot claims the amount
-*/
-int claim(char operand1);
 
 #endif  /* #define __INSURANCE_MANAGEMENT_H__ */
