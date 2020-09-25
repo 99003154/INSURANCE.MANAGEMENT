@@ -114,7 +114,4 @@ int correctpayment(float operand1)
    return 0;
 }
 
-char login(char username,char password)
-{
 
-}
