@@ -20,8 +20,8 @@ void test_validenginenumber(void);
 void test_invalidenginenumber(void);
 void test_validpay_pa(void);
 void test_invalidpay_pa(void);
-void test_validpa_payment(void);
-void test_invalidpa_payment(void);
+/*void test_validpa_payment(void);
+void test_invalidpa_payment(void);*/
 
 
 /* Start of the application test */
@@ -49,8 +49,8 @@ int main() {
   CU_add_test(suite, "invalidenginenumber", test_invalidenginenumber);
   CU_add_test(suite, "validpay_pa", test_validpay_pa);
   CU_add_test(suite, "invalidpay_pa", test_invalidpay_pa);
-  CU_add_test(suite, "validpa_payment", test_validpa_payment);
-  CU_add_test(suite, "invalidpa_payment", test_invalidpa_payment);
+  /*CU_add_test(suite, "validpa_payment", test_validpa_payment);
+  CU_add_test(suite, "invalidpa_payment", test_invalidpa_payment);*/
  
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -70,29 +70,29 @@ int main() {
 
 
 void test_validusername(void) {
-  CU_ASSERT(1 == username(madhushree c));
+  CU_ASSERT(1 == username("madhushree c"));
   
   
-  CU_ASSERT(1 == username(manyatha a));
+  CU_ASSERT(1 == username("manyatha a"));
 }
 void test_invalidusername(void) {
-  CU_ASSERT(0 == username(madhushree2698));
+  CU_ASSERT(0 == username("madhushree2698"));
   
   
-  CU_ASSERT(0 == username(manyatha8989));
+  CU_ASSERT(0 == username("manyatha8989"));
 }
 
 void test_validpassword(void) {
-  CU_ASSERT(1 == password(madhu@123));
+  CU_ASSERT(1 == password("madhu@123"));
   
  
-  CU_ASSERT(1 == password(manyatha@123));
+  CU_ASSERT(1 == password("manyatha@123"));
 }
 
 void test_invalidpassword(void) {
-  CU_ASSERT(0 == password(madhushree));
+  CU_ASSERT(0 == password("madhushree"));
   
-  CU_ASSERT(0 == password(many16));
+  CU_ASSERT(0 == password("many16"));
 }
 
 void test_validage(void) {
@@ -109,45 +109,45 @@ void test_invalidage(void) {
 }
 
 void test_validphonenumber(void) {
-  CU_ASSERT(1 == phonenumber(1234567890));
+  CU_ASSERT(1 == phonenumber("1234567890"));
   
   
-  CU_ASSERT(1 == phonenumber(4536271809));
+  CU_ASSERT(1 == phonenumber("4536271809"));
 }
 
 void test_invalidphonenumber(void) {
-  CU_ASSERT(0 == phonenumber(4567890));
+  CU_ASSERT(0 == phonenumber("4567890"));
   
   
-  CU_ASSERT(0 == phonenumber(123456789011));
+  CU_ASSERT(0 == phonenumber("123456789011"));
 }
 
 void test_validlicensenumber(void) {
-  CU_ASSERT(1 == licensenumber(karnatakamysor1));
+  CU_ASSERT(1 == licensenumber("karnatakamysor1"));
   
-  CU_ASSERT(1 == licensenumber(karnataka@mysor));
+  CU_ASSERT(1 == licensenumber("karnataka@mysor"));
   
-  CU_ASSERT(1 == licensenumber(karnatakamysore));
+  CU_ASSERT(1 == licensenumber("karnatakamysore"));
 }
 
 void test_invalidlicensenumber(void) {
-  CU_ASSERT(0 == licensenumber(karnatakamysoregok));
+  CU_ASSERT(0 == licensenumber("karnatakamysoregok"));
   
-  CU_ASSERT(0 == licensenumber(karnataka myso));
+  CU_ASSERT(0 == licensenumber("karnataka myso"));
  
 }
 
 void test_validenginenumber(void) {
-  CU_ASSERT(1 == enginenumber(9988776655));
+  CU_ASSERT(1 == enginenumber("9988776655"));
   
-  CU_ASSERT(1 == enginenumber(2211332211));
+  CU_ASSERT(1 == enginenumber("2211332211"));
   
  }
  
  void test_invalidenginenumber(void) {
-  CU_ASSERT(0 == enginenumber(887788778877));
+  CU_ASSERT(0 == enginenumber("887788778877"));
   
-  CU_ASSERT(0 == enginenumber(990099));
+  CU_ASSERT(0 == enginenumber("990099"));
   
  }
  
@@ -162,14 +162,14 @@ void test_validenginenumber(void) {
    
  }
  
-  void test_validpa_payment(void) {
+ /* void test_validpa_payment(void) {
   CU_ASSERT(1 == pa_payment(1));
  
   
  }
  
   void test_invalidpa_payment(void) {
-  CU_ASSERT(0 == pa_payment(0));
+  CU_ASSERT(0 == pa_payment(0));*/
  
   
  }
