@@ -1,31 +1,36 @@
-#include <insurance_management.h>
+#include "insurance_management.h"
 
-char username(char operand1)
+
+char username(char operand1[])
 {
-scanf("%s",operand1);
+int i;
 for(i=0;i<strlen(operand1);i++)
 {
 if((operand1[i]>='A'&&operand1[i]<='Z')||(operand1[i]>='a'&&operand1[i]<='z')|operand1[i]==' ')
-return 1;
-else
-return 0;
+{
+continue;
 }
+else
+    return 0;
+}
+return 1;
+
 }
 
-char password(char operand1)
+
+char password(char operand2[])
 {
-int acount, icount, spcount;
-scanf("%s",operand1);
-if(strlen(operand1)<=8)
+int acount, icount, spcount, i;
+if(strlen(operand2)<=8)
     return 0;
-        
-for(i=0;i<strlen(operand1);i++)
+
+for(i=0;i<strlen(operand2);i++)
 {
-    if((operand1[i]>='A' &&operand1[i]<='Z')||(operand1[i]>='a'&&operand1[i]<='z'))
+    if((operand2[i]>='A' &&operand2[i]<='Z')||(operand2[i]>='a'&&operand2[i]<='z'))
         acount++;
-    else if(operand1[i]>='0'&& operand1[i]<='9')
+    else if(operand2[i]>='0'&& operand2[i]<='9')
         icount++;
-    else if((operand1[i]>=33 &&operand1[i]<=47)||(operand1[i]>=60 &&operand1[i]<=64))
+    else if((operand2[i]>=33 &&operand2[i]<=47)||(operand2[i]>=60 &&operand2[i]<=64))
          spcount++;
 }
 if(acount<1||icount<1 ||spcount<1)
@@ -34,40 +39,38 @@ else
     return 1;
 }
 
-int age(int operand1)
+int age(int operand3)
 {
-scanf("%d",&operand1);
-if(operand1>=18&&operand1<=100)
+if(operand3>=18&&operand3<=100)
     return 1;
-else if
+else
     return 0;
 }
 
-int phonenumber(int operand1)
+int phonenumber(char operand4[])
 {
-scanf("%s",&operand1);
-if(strlen(operand1)==10)
+int i;
+if(strlen(operand4)==10)
 {
-for(i=0;i<strlen(operand1);i++)
+for(i=1;i<=strlen(operand4);i++)
 {
-if(operand1[i]>='0'&&operand1[i]<='9')
+if(operand4[i]>='0'&&operand4[i]<='9')
     return 1;
-else 
+else
     return 0;
 }
 }
-else 
+else
     return 0;
 }
 
-char licensenumber(char operand1)
+char licensenumber(char operand5[])
 {
-scanf("%s",operand1);
-if(strlen(operand1)==15)
+if(strlen(operand5)==15)
 {
-if(operand1[0]>='A'&&operand1[0]<='Z'||operand1[0]>='a'&&operand1[0]<='z')
+if(operand5[0]>='A'&&operand5[0]<='Z'||operand5[0]>='a'&&operand5[0]<='z')
 {
-if(operand1[1]>='A'&&operand1[1]<='Z'||operand1[1]>='a'&&operand1[1]<='z')
+if(operand5[1]>='A'&&operand5[1]<='Z'||operand5[1]>='a'&&operand5[1]<='z')
      return 1;
 else
 {
@@ -85,33 +88,30 @@ return 0;
 }
 }
 
-int enginenumber(int operand1)
+char enginenumber(int operand6[10])
 {
-scanf("%s",operand1);
-if(strlen(operand1)!=10)
+if(strlen(operand6)!=10)
     return 0;
 else
     return 1;
 }
 
-int pay_pa(char operand1)
+char pay_pa(int operand7)
 {
-scanf("%s",operand1);
-if(operand1[0]=='0')
+
+if(operand7==0)
     return 0;
 
-else if(operand1[0]=='1')
+else if(operand7==1)
     return 1;
 }
 
-int pa_payment(float operand1)
+/*char pa_payment(int amnt)
 {
-  scanf("%f",&operand1);
-  amount=amount;
-  if(amnt==amount)
+float amount;
+amount=amount;
+if(amnt==amount)
     return 1;
-  else
-   return 0;
-}
-
-
+else
+    return 0;
+}*/
