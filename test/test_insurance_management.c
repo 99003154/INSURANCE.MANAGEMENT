@@ -203,6 +203,6 @@ void test_validclaim(void) {
 }
 
  void test_invalidclaim(void) {
-  CU_ASSERT(0 == claim("BB32591"));
-  CU_ASSERT(0 == claim("TP3026"));
+  CU_ASSERT(0 == claim("MM54591"));
+  CU_ASSERT(0 == claim("VA8826"));
 }
