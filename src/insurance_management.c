@@ -170,7 +170,7 @@ else if(op3==1)
 }
 
 
-int login(char *op2[],char op4[])
+int login(char op2[],char op4[])
 {
 
     FILE *fptr;//pointing to the file
