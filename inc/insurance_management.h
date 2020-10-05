@@ -103,7 +103,7 @@ char pay_pa(int operand7);
 * @param[in] pwd
 * @return Result if cliend as entered correct username and password returns 1 else returns 0
 */
-int login(char user_name[],char pwd[]);
+int login(char *user_name[],char *pwd[]);
 
 /**
 * tells whether cliend can claim the insurance amount or not
