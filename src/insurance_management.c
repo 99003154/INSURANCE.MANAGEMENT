@@ -4,9 +4,9 @@
 #include<time.h>
 #include <insurance_management.h>
 
-int choice(char *operand3)
+int choice(char *op1)
 {
-     switch(operand3)
+     switch(op1)
     {
         case 'B':
             return 1;
@@ -25,12 +25,12 @@ int choice(char *operand3)
 
 
 
-char username(char *operand1[])
+char username(char *op2[])
 {
 int i;
-for(i=0;i<strlen(operand1);i++)
+for(i=0;i<strlen(op2);i++)
 {
-if((operand1[i]>='A'&&operand1[i]<='Z')||(operand1[i]>='a'&&operand1[i]<='z')|operand1[i]==' ')
+if((op2[i]>='A'&&op2[i]<='Z')||(op2[i]>='a'&&op2[i]<='z')|op2[i]==' ')
 {
 continue;
 }
@@ -42,19 +42,19 @@ return 1;
 }
 
 
-char password(char *operand2[])
+char password(char *op2[])
 {
 int acount, icount, spcount, i;
-if(strlen(operand2)<=8)
+if(strlen(op2)<=8)
     return 0;
 
-for(i=0;i<strlen(operand2);i++)
+for(i=0;i<strlen(op2);i++)
 {
-    if((operand2[i]>='A' &&operand2[i]<='Z')||(operand2[i]>='a'&&operand2[i]<='z'))
+    if((op2[i]>='A' &&op2[i]<='Z')||(op2[i]>='a'&&op2[i]<='z'))
         acount++;
-    else if(operand2[i]>='0'&& operand2[i]<='9')
+    else if(op2[i]>='0'&& op2[i]<='9')
         icount++;
-    else if((operand2[i]>=33 &&operand2[i]<=47)||(operand2[i]>=60 &&operand2[i]<=64))
+    else if((op2[i]>=33 &&op2[i]<=47)||(op2[i]>=60 &&op2[i]<=64))
          spcount++;
 }
 if(acount<1||icount<1 ||spcount<1)
@@ -63,9 +63,9 @@ else
     return 1;
 }
 
-int gender(char *operand3)
+int gender(char *op1)
 {
-     switch(operand3)
+     switch(op1)
     {
         case 'M':
         case 'm':
@@ -86,22 +86,22 @@ int gender(char *operand3)
 }
 
 
-int age(int operand3)
+int age(int op3)
 {
-if(operand3>=18&&operand3<=100)
+if(op3>=18&&op3<=100)
     return 1;
 else
     return 0;
 }
 
-int phonenumber(char *operand4[])
+int phonenumber(char *op2[])
 {
 int i;
-if(strlen(operand4)==10)
+if(strlen(op2)==10)
 {
-for(i=1;i<=strlen(operand4);i++)
+for(i=1;i<=strlen(op2);i++)
 {
-if(operand4[i]>='0'&&operand4[i]<='9')
+if(op2[i]>='0'&&op2[i]<='9')
     return 1;
 else
     return 0;
@@ -111,9 +111,9 @@ else
     return 0;
 }
 
-int vehicletype(char *operand3)
+int vehicletype(char *op1)
 {
-     switch(operand3)
+     switch(op1)
     {
         case 2:
             return 1;
@@ -127,13 +127,13 @@ int vehicletype(char *operand3)
 
 }
 
-char licensenumber(char *operand5[])
+char licensenumber(char *op2[])
 {
-if(strlen(operand5)==15)
+if(strlen(op2)==15)
 {
-if(operand5[0]>='A'&&operand5[0]<='Z'||operand5[0]>='a'&&operand5[0]<='z')
+if(op2[0]>='A'&&op2[0]<='Z'||op2[0]>='a'&&op2[0]<='z')
 {
-if(operand5[1]>='A'&&operand5[1]<='Z'||operand5[1]>='a'&&operand5[1]<='z')
+if(op2[1]>='A'&&op2[1]<='Z'||op2[1]>='a'&&op2[1]<='z')
      return 1;
 else
 {
@@ -151,26 +151,26 @@ return 0;
 }
 }
 
-char enginenumber(char *operand6[])
+char enginenumber(char *op2[])
 {
-if(strlen(operand6)!=10)
+if(strlen(op2)!=10)
     return 0;
 else
     return 1;
 }
 
-char pay_pa(int operand7)
+char pay_pa(int op3)
 {
 
-if(operand7==0)
+if(op3==0)
     return 0;
 
-else if(operand7==1)
+else if(op3==1)
     return 1;
 }
 
 
-int login(char *user_name[],char *pwd[])
+int login(char *op2[],char *op4[])
 {
 
     FILE *fptr;//pointing to the file
@@ -196,7 +196,7 @@ int login(char *user_name[],char *pwd[])
 
         	temp[strlen(temp)-1]='\0';
 
-        	if(strcmp(user_name,temp)!=0)
+        	if(strcmp(op2,temp)!=0)
         	{
         		f=1;
 			}
@@ -205,7 +205,7 @@ int login(char *user_name[],char *pwd[])
 		fgets(temp1,20,fp1);
 		temp1[strlen(temp1)-1]='\0';
 
-	if((strcmp(pwd,temp1))!=0)
+	if((strcmp(op4,temp1))!=0)
         	{
         		f=1;
 			}
@@ -233,7 +233,7 @@ int login(char *user_name[],char *pwd[])
 		}
 }
 
-int claim(char *id[])
+int claim(char *op1[])
 {
     FILE *fptr;//pointing to the file
     FILE *fptr1;
@@ -259,7 +259,7 @@ int claim(char *id[])
 			if(f==0)
 			{
 			temp[strlen(temp)-1]='\0';
-			if(strcmp(temp,id)==0)
+			if(strcmp(temp,op1)==0)
 			{
 				fscanf(fpt,"%d",&y);
 				if(y==yr)
