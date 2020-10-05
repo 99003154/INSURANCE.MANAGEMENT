@@ -13,7 +13,7 @@ char insurance_op2[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 char insurance_op4[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 int insurance_op3 = 0;
 /* Valid operations */
-enum operations{ CHOICE=1, USERNAME, PASSWORD, GENDER, AGE, PHONENUMBER, VEHICLETYPE, LINCENSENUMBER, ENGINENUMBER, PAY_PA, LOGIN, CLAIM, EXIT };
+enum operations{ CHOICE=1, USERNAME, PASSWORD, GENDER, AGE, PHONENUMBER, VEHICLETYPE, LICENSENUMBER, ENGINENUMBER, PAY_PA, LOGIN, CLAIM, EXIT };
 
 /* Display the menu of operations supported */
 void insurance_menu(void);
