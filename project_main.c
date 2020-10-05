@@ -16,7 +16,7 @@ int insurance_operand8;
 char insurance_operand4[];
 char insurance_operand3;
 char insurance_operand5[];
-int insurance_operand6[];
+char insurance_operand6[];
 int insurance_operand7;
 char insurance_user_name;
 char insurance_pwd;
