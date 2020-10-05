@@ -8,19 +8,19 @@
 unsigned int insurance_operation = 0;
 
 /* Operands on which calculation is performed */
-char insurance_operand10 = '\0';
-char insurance_operand1[] = '\0';
-char insurance_operand2[] = '\0';
-char insurance_operand9 = '\0';
+char insurance_operand10 = 0;
+char insurance_operand1[] = 0;
+char insurance_operand2[] = 0;
+char insurance_operand9 = 0;
 int insurance_operand8 = 0;
-char insurance_operand4[] = '\0';
-char insurance_operand3 = '\0';
-char insurance_operand5[] = '\0';
+char insurance_operand4[] = 0;
+char insurance_operand3 = 0';
+char insurance_operand5[] = 0;
 int insurance_operand6[10] = 0;
 int insurance_operand7 = 0;
-char insurance_user_name = '\0';
-char insurance_pwd = '\0';
-char insurance_id[] = '\0';
+char insurance_user_name = 0;
+char insurance_pwd = 0;
+char insurance_id[] = 0;
 
 /* Valid operations */
 enum operations{ CHOICE=1, USERNAME, PASSWORD, GENDER, AGE, PHONENUMBER, VEHICLETYPE, LINCENSENUMBER, ENGINENUMBER, PAY_PA, LOGIN, CLAIM, EXIT };
@@ -60,7 +60,7 @@ void insurance_menu(void)
     {
         printf("\n\tEnter the information with space between them\n");
         __fpurge(stdin);
-        scanf("%c %s %s %c %d %s %c %s %s %d %c %c %s", &insurance_operand10, &insurance_operand1, &insurance_operand2, &insurance_operand9,&int insurance_operand8, &insurance_operand4, &insurance_operand3, &insurance_operand5, &insurance_operand6, &insurance_operand7, &insurance_username, &pwd, &id);
+        scanf("%c %s %s %c %d %s %c %s %s %d %c %c %s", &insurance_operand10, &insurance_operand1, &insurance_operand2, &insurance_operand9,&insurance_operand8, &insurance_operand4, &insurance_operand3, &insurance_operand5, &insurance_operand6, &insurance_operand7, &insurance_username, &pwd, &id);
     }
     else
     {
