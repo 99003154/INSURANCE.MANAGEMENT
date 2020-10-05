@@ -72,7 +72,7 @@ void insurance_menu(void)
             break;
         case USERNAME:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[],
+            insurance_op2[50],
             username(insurance_op2[]));
             
             __fpurge(stdin);
@@ -80,7 +80,7 @@ void insurance_menu(void)
             break;
         case PASSWORD:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[], 
+            insurance_op2[50], 
             password(insurance_op2[]));
             
             __fpurge(stdin);
@@ -104,7 +104,7 @@ void insurance_menu(void)
             break;
         case PHONENUMBER:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[], 
+            insurance_op2[50], 
             phonenumber(insurance_op2[]));
             
             __fpurge(stdin);
@@ -120,7 +120,7 @@ void insurance_menu(void)
             break;
           case LICENSENUMBER:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[], 
+            insurance_op2[50], 
             licensenumber(insurance_op2[]));
             
             __fpurge(stdin);
@@ -128,7 +128,7 @@ void insurance_menu(void)
             break;
           case ENGINENUMBER:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[], 
+            insurance_op2[50], 
             enginenumber(insurance_op2[]));
             
             __fpurge(stdin);
@@ -144,8 +144,8 @@ void insurance_menu(void)
             break;
         case LOGIN:
             printf("\n\t%s %s\nEnter to continue", 
-            insurance_op2[], 
-            insurance_op4[],
+            insurance_op2[50], 
+            insurance_op4[50],
             login(insurance_op2[], insurance_op4[]));
             
             __fpurge(stdin);
@@ -153,7 +153,7 @@ void insurance_menu(void)
             break;
         case CLAIM:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[], 
+            insurance_op2[50], 
             claim(insurance_op2[]));
             
             __fpurge(stdin);
