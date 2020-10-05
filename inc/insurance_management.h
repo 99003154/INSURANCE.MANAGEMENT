@@ -17,20 +17,20 @@
 * where B indicates Bumper to Bumper insurance, F indicates Full Party Insurance and T indicates third party insurance
 * @return Result retruns 1 if operand3 is one of the 3 choices else returns 0
 */
-int choice(char operand3);
+int choice(char *operand3);
 /**
 * checks whether operand1 contains only character or not
 * @param[in] operand1
 * @return Result retruns 1 if operand1 only contains character else returns 0
 */
-char username(char operand1[]);
+char username(char *operand1[]);
 
 /**
 *  checks whether operand1 contains only character or not
 * @param[in] operand1
 * @return Result retruns 1 if operand1 only contains character else returns 0
 */
-char password(char operand2[]);
+char password(char *operand2[]);
 
 /**
 * tells whether cliend as entered the valid gender or not
@@ -39,7 +39,7 @@ char password(char operand2[]);
 * @param[in] operand1
 * @return Result if operand1 is 1 client as entered valid gender else invalid genter
 */
-int gender(char operand3);
+int gender(char *operand3);
 
 /**
 *  checks whether operand3 is between 18 to 100
@@ -54,7 +54,7 @@ int age(int operand1);
 * @param[in] operand1
 * @return Result retruns 1 if operand1 as 10 digits else returns 0
 */
-int phonenumber(char operand4[]);
+int phonenumber(char *operand4[]);
 
 
 
@@ -64,7 +64,7 @@ int phonenumber(char operand4[]);
 * 2 indicates two wheeler and 4 indicates four wheeler
 * @return Result retruns 1 if operand3 is either 2 or 4 else returns 0
 */
-int vehicletype(char operand3);
+int vehicletype(char *operand3);
 
 
 /**
@@ -72,21 +72,21 @@ int vehicletype(char operand3);
 * @param[in] operand1
 * @return Result retruns 1 if operand1 is in size of 15(characters and digits) else returns 0
 */
-char licensenumber(char operand5[]);
+char licensenumber(char *operand5[]);
 
 /**
 * checks whether operand1 is in size of 10(characters and digits)
 * @param[in] operand1
 * @return Result retruns 1 if operand1 is in size of 10(characters and digits) else returns 0
 */
-char enginenumber(char operand6[]);
+char enginenumber(char *operand6[]);
 
 /**
 * tells whether cliend pays the principle amount or quits the portal
 * @param[in] operand1
 * @return Result if operand1 is 1 client pays the principle amount else quit the portal
 */
-char pay_pa(int operand7);
+char pay_pa(int *operand7);
 
 
 
@@ -110,7 +110,7 @@ int login(char *user_name[],char *pwd[]);
 * @param[in] id
 * @return Result if cliend can claim the amount if it returns 1 else client can't claim
 */
-int claim(char id[]);
+int claim(char *id[]);
 
 
 #endif  /* #define __INSURANCE_MANAGEMENT_H__ */
