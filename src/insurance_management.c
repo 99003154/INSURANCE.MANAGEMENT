@@ -170,7 +170,7 @@ else if(operand7==1)
 }
 
 
-int login(char user_name[],char pwd[])
+int login(char *user_name[],char *pwd[])
 {
 
     FILE *fptr;//pointing to the file
