@@ -1,3 +1,7 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
 #include <insurance_management.h>
 
 int choice(char operand3)
