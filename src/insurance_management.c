@@ -4,7 +4,7 @@
 #include<time.h>
 #include <insurance_management.h>
 
-int choice(char operand3)
+int choice(char *operand3)
 {
      switch(operand3)
     {
@@ -25,7 +25,7 @@ int choice(char operand3)
 
 
 
-char username(char operand1[])
+char username(char *operand1[])
 {
 int i;
 for(i=0;i<strlen(operand1);i++)
@@ -42,7 +42,7 @@ return 1;
 }
 
 
-char password(char operand2[])
+char password(char *operand2[])
 {
 int acount, icount, spcount, i;
 if(strlen(operand2)<=8)
@@ -63,7 +63,7 @@ else
     return 1;
 }
 
-int gender(char operand3)
+int gender(char *operand3)
 {
      switch(operand3)
     {
@@ -94,7 +94,7 @@ else
     return 0;
 }
 
-int phonenumber(char operand4[])
+int phonenumber(char *operand4[])
 {
 int i;
 if(strlen(operand4)==10)
@@ -111,7 +111,7 @@ else
     return 0;
 }
 
-int vehicletype(char operand3)
+int vehicletype(char *operand3)
 {
      switch(operand3)
     {
@@ -127,7 +127,7 @@ int vehicletype(char operand3)
 
 }
 
-char licensenumber(char operand5[])
+char licensenumber(char *operand5[])
 {
 if(strlen(operand5)==15)
 {
@@ -151,7 +151,7 @@ return 0;
 }
 }
 
-char enginenumber(char operand6[])
+char enginenumber(char *operand6[])
 {
 if(strlen(operand6)!=10)
     return 0;
@@ -233,7 +233,7 @@ int login(char *user_name[],char *pwd[])
 		}
 }
 
-int claim(char id[])
+int claim(char *id[])
 {
     FILE *fptr;//pointing to the file
     FILE *fptr1;
