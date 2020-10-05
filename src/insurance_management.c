@@ -1,4 +1,24 @@
-#include "insurance_management.h"
+#include <insurance_management.h>
+
+int choice(char operand3)
+{
+     switch(operand3)
+    {
+        case 'B':
+            return 1;
+            break;
+        case 'F':
+            return 1;
+            break;
+        case 'T':
+            return 1;
+            break;
+        default:
+            return 0;
+    }
+
+}
+
 
 
 char username(char operand1[])
@@ -39,6 +59,29 @@ else
     return 1;
 }
 
+int gender(char operand3)
+{
+     switch(operand3)
+    {
+        case 'M':
+        case 'm':
+            return 1;
+            break;
+        case 'F':
+        case 'f':
+            return 1;
+            break;
+        case 'O':
+        case 'o':
+            return 1;
+            break;
+        default:
+            return 0;
+    }
+    return 0;
+}
+
+
 int age(int operand3)
 {
 if(operand3>=18&&operand3<=100)
@@ -62,6 +105,22 @@ else
 }
 else
     return 0;
+}
+
+int vehicletype(char operand3)
+{
+     switch(operand3)
+    {
+        case 2:
+            return 1;
+            break;
+        case 4:
+            return 1;
+            break;
+        default:
+            return 0;
+    }
+
 }
 
 char licensenumber(char operand5[])
@@ -106,12 +165,112 @@ else if(operand7==1)
     return 1;
 }
 
-/*char pa_payment(int amnt)
+
+int login(char user_name[],char pwd[])
 {
-float amount;
-amount=amount;
-if(amnt==amount)
-    return 1;
-else
-    return 0;
-}*/
+
+    FILE *fptr;//pointing to the file
+    FILE *fptr1;
+    FILE *fptr2;
+    FILE *fptr3;
+    fptr=fopen("userdetails.txt","a");//opening the file which is in both read and write format
+    fptr1=fopen("userpass.txt","a");
+    fptr2=fopen("amount.txt","a");
+    fptr3=fopen("details.txt","a");
+	char c;
+	int i,f=0,cnt=0,ch;
+
+    FILE *fp1 = fopen("userdetails.txt","r");
+    //FILE *fp2 = fopen("userpass.txt","r");
+	char temp[100],temp1[100],sent[100],temp2[100];
+	label1:
+
+	while (fgets(temp,20,fp1)!=NULL)
+        {
+          f=0;
+        	cnt++;
+
+        	temp[strlen(temp)-1]='\0';
+
+        	if(strcmp(user_name,temp)!=0)
+        	{
+        		f=1;
+			}
+			if(f==0)
+			{
+		fgets(temp1,20,fp1);
+		temp1[strlen(temp1)-1]='\0';
+
+	if((strcmp(pwd,temp1))!=0)
+        	{
+        		f=1;
+			}
+
+			if(f==0)
+			{
+				fgets(temp2,20,fp1);
+	        	temp2[strlen(temp2)-1]='\0';
+				strcpy(sent,temp2);
+				break;
+			}
+		}
+		}
+
+
+
+        if(f==0 && cnt>0)
+        {
+        	return 1;
+
+		}
+		else
+		{
+			return 0;
+		}
+}
+
+int claim(char id[])
+{
+    FILE *fptr;//pointing to the file
+    FILE *fptr1;
+    FILE *fptr2;
+    FILE *fptr3;
+    fptr=fopen("userdetails.txt","a");//opening the file which is in both read and write format
+    fptr1=fopen("userpass.txt","a");
+    fptr2=fopen("amount.txt","a");
+    fptr3=fopen("details.txt","a");
+	char temp[30];
+	int yr;
+	int c=1,f=0,y,choice;
+	char description[250];
+	time_t t = time(NULL);
+	struct tm tm = *localtime(&t);
+	yr = tm.tm_year + 1900;
+	int amt;
+	FILE *fpt;
+	fpt = fopen("cl.txt","a+");
+		rewind(fpt);
+		while(fgets(temp,100,fpt)!=NULL)
+		{
+			if(f==0)
+			{
+			temp[strlen(temp)-1]='\0';
+			if(strcmp(temp,id)==0)
+			{
+				fscanf(fpt,"%d",&y);
+				if(y==yr)
+				{
+					return 0;
+				}
+			}
+			}
+		}
+
+
+	if(f==0)
+	{
+	    return 1;
+	}
+
+	rewind(fpt);
+}
