@@ -79,7 +79,7 @@ char licensenumber(char operand5[]);
 * @param[in] operand1
 * @return Result retruns 1 if operand1 is in size of 10(characters and digits) else returns 0
 */
-char enginenumber(int operand6[]);
+char enginenumber(char operand6[]);
 
 /**
 * tells whether cliend pays the principle amount or quits the portal
