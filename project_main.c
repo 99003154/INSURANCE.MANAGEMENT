@@ -72,16 +72,16 @@ void insurance_menu(void)
             break;
         case USERNAME:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[50],
-            username(insurance_op2[50]));
+            insurance_op2[100],
+            username(insurance_op2[100]));
             
             __fpurge(stdin);
             getchar();
             break;
         case PASSWORD:
             printf("\n\t %s\nEnter to continue", 
-            insurance_op2[50], 
-            password(insurance_op2[50]));
+            insurance_op2[100], 
+            password(insurance_op2[100]));
             
             __fpurge(stdin);
             getchar();
