@@ -82,7 +82,7 @@ int main() {
 
 
 
-void test_validchoice {
+void test_validchoice(void) {
   CU_ASSERT(1 == choice('B'));
   CU_ASSERT(1 == choice('F'));
   CU_ASSERT(1 == choice('T'));
