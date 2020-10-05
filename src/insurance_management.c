@@ -233,7 +233,7 @@ int login(char *op2[],char *op4[])
 		}
 }
 
-int claim(char *op1[])
+int claim(char *op2[])
 {
     FILE *fptr;//pointing to the file
     FILE *fptr1;
