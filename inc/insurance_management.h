@@ -86,7 +86,7 @@ char enginenumber(char *operand6[]);
 * @param[in] operand1
 * @return Result if operand1 is 1 client pays the principle amount else quit the portal
 */
-char pay_pa(int *operand7);
+char pay_pa(int operand7);
 
 
 
