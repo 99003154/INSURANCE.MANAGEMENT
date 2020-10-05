@@ -8,19 +8,19 @@
 unsigned int insurance_operation = 0;
 
 /* Operands on which calculation is performed */
-/*char insurance_operand10 = 0;
-char insurance_operand1[] = 0;
-char insurance_operand2[] = 0;
-char insurance_operand9 = 0;
-int insurance_operand8 = 0;
-char insurance_operand4[] = 0;
-char insurance_operand3 = 0;
-char insurance_operand5[] = 0;
-int insurance_operand6[] = 0;
-int insurance_operand7 = 0;
-char insurance_user_name = 0;
-char insurance_pwd = 0;
-char insurance_id[] = 0;*/
+char insurance_operand10;
+char insurance_operand1[];
+char insurance_operand2[];
+char insurance_operand9;
+int insurance_operand8;
+char insurance_operand4[];
+char insurance_operand3;
+char insurance_operand5[];
+int insurance_operand6[];
+int insurance_operand7;
+char insurance_user_name;
+char insurance_pwd;
+char insurance_id[];
 
 /* Valid operations */
 enum operations{ CHOICE=1, USERNAME, PASSWORD, GENDER, AGE, PHONENUMBER, VEHICLETYPE, LINCENSENUMBER, ENGINENUMBER, PAY_PA, LOGIN, CLAIM, EXIT };
