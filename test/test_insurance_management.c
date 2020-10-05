@@ -89,7 +89,7 @@ void test_validchoice(void) {
   
 }
 
-void test_validchoice(void) {
+void test_invalidchoice(void) {
   CU_ASSERT(0 == choice('P'));
   CU_ASSERT(0 == choice('I'));
 }
