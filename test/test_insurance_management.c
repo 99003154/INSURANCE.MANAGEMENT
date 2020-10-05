@@ -183,7 +183,7 @@ void test_validpay_pa(void) {
   CU_ASSERT(1 == pay_pa(1));
 }
 
-void test_invalidenginenumber(void) {
+void test_invalidpay_pa(void) {
   CU_ASSERT(0 == pay_pa(0));
 }
 
