@@ -259,7 +259,7 @@ int claim(char op2[])
 			if(f==0)
 			{
 			temp[strlen(temp)-1]='\0';
-			if(strcmp(temp,op1)==0)
+			if(strcmp(temp,op2)==0)
 			{
 				fscanf(fpt,"%d",&y);
 				if(y==yr)
