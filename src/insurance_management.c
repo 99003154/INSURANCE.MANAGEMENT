@@ -4,7 +4,7 @@
 #include<time.h>
 #include <insurance_management.h>
 
-int choice(char *op1)
+int choice(char op1)
 {
      switch(op1)
     {
@@ -25,7 +25,7 @@ int choice(char *op1)
 
 
 
-char username(char *op2[])
+char username(char op2[])
 {
 int i;
 for(i=0;i<strlen(op2);i++)
@@ -42,7 +42,7 @@ return 1;
 }
 
 
-char password(char *op2[])
+char password(char op2[])
 {
 int acount, icount, spcount, i;
 if(strlen(op2)<=8)
@@ -63,7 +63,7 @@ else
     return 1;
 }
 
-int gender(char *op1)
+int gender(char op1)
 {
      switch(op1)
     {
@@ -94,7 +94,7 @@ else
     return 0;
 }
 
-int phonenumber(char *op2[])
+int phonenumber(char op2[])
 {
 int i;
 if(strlen(op2)==10)
@@ -111,7 +111,7 @@ else
     return 0;
 }
 
-int vehicletype(char *op1)
+int vehicletype(char op1)
 {
      switch(op1)
     {
@@ -127,7 +127,7 @@ int vehicletype(char *op1)
 
 }
 
-char licensenumber(char *op2[])
+char licensenumber(char op2[])
 {
 if(strlen(op2)==15)
 {
@@ -151,7 +151,7 @@ return 0;
 }
 }
 
-char enginenumber(char *op2[])
+char enginenumber(char op2[])
 {
 if(strlen(op2)!=10)
     return 0;
@@ -170,7 +170,7 @@ else if(op3==1)
 }
 
 
-int login(char *op2[],char *op4[])
+int login(char *op2[],char op4[])
 {
 
     FILE *fptr;//pointing to the file
@@ -233,7 +233,7 @@ int login(char *op2[],char *op4[])
 		}
 }
 
-int claim(char *op2[])
+int claim(char op2[])
 {
     FILE *fptr;//pointing to the file
     FILE *fptr1;
