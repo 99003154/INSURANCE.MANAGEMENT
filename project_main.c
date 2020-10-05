@@ -9,8 +9,8 @@ unsigned int insurance_operation = 0;
 
 /* Operands on which calculation is performed */
 char insurance_op1 = 0;
-char insurance_op2[];
-char insurance_op4[];
+char insurance_op2[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+char insurance_op4[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 int insurance_op3 = 0;
 /* Valid operations */
 enum operations{ CHOICE=1, USERNAME, PASSWORD, GENDER, AGE, PHONENUMBER, VEHICLETYPE, LINCENSENUMBER, ENGINENUMBER, PAY_PA, LOGIN, CLAIM, EXIT };
