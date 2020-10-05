@@ -151,7 +151,7 @@ return 0;
 }
 }
 
-char enginenumber(int operand6[])
+char enginenumber(char operand6[])
 {
 if(strlen(operand6)!=10)
     return 0;
