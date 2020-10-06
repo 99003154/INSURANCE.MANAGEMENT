@@ -105,8 +105,8 @@ void test_invalidusername(void) {
 }
 
 void test_validpassword(void) {
-  CU_ASSERT(1 == password("madhu@123456"));
-  CU_ASSERT(1 == password("manyatha@123"));
+  CU_ASSERT(1 == password("Madhu@123456"));
+  CU_ASSERT(1 == password("Manyatha@123"));
 }
 
 void test_invalidpassword(void) {
