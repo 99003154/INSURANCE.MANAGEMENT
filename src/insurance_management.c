@@ -173,14 +173,14 @@ else if(op3==1)
 int login(char op2[],char op4[])
 {
 
-    FILE *fptr;//pointing to the file
+    /*FILE *fptr;//pointing to the file
     FILE *fptr1;
     FILE *fptr2;
     FILE *fptr3;
     fptr=fopen("userdetails.txt","a");//opening the file which is in both read and write format
     fptr1=fopen("userpass.txt","a");
     fptr2=fopen("amount.txt","a");
-    fptr3=fopen("details.txt","a");
+    fptr3=fopen("details.txt","a");*/
 	char c;
 	int i,f=0,cnt=0,ch;
 
@@ -235,14 +235,14 @@ int login(char op2[],char op4[])
 
 int claim(char op2[])
 {
-    FILE *fptr;//pointing to the file
+    /*FILE *fptr;//pointing to the file
     FILE *fptr1;
     FILE *fptr2;
     FILE *fptr3;
     fptr=fopen("userdetails.txt","a");//opening the file which is in both read and write format
     fptr1=fopen("userpass.txt","a");
     fptr2=fopen("amount.txt","a");
-    fptr3=fopen("details.txt","a");
+    fptr3=fopen("details.txt","a");*/
 	char temp[30];
 	int yr;
 	int c=1,f=0,y,choice;
