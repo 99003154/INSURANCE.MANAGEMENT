@@ -188,8 +188,8 @@ void test_invalidpay_pa(void) {
 }
 
 void test_validlogin(void) {
-  CU_ASSERT(0 == login("Madhu","Madhuc@123"));
-  CU_ASSERT(0 == login("Manyatha","Manyathaa@123"));
+  CU_ASSERT(1 == login("Madhu","Madhuc@123"));
+  CU_ASSERT(1 == login("Manyatha","Manyathaa@123"));
 }
 
 void test_invalidlogin(void) {
@@ -203,6 +203,6 @@ void test_validclaim(void) {
 }
 
  void test_invalidclaim(void) {
-  CU_ASSERT(1 == claim("BB662"));
-  CU_ASSERT(1 == claim("BB975"));
+  CU_ASSERT(0 == claim("BB662"));
+  CU_ASSERT(0 == claim("BB975"));
 }
